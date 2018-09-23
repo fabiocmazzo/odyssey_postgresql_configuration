@@ -23,4 +23,10 @@ Change connection and database details from config files and run odyssey to test
 
 /opt/odyssey/odyssey /opt/odyssey/config
 
+Note: if you using md5 hash password, get password hash from database:
+
+SELECT usename, passwd FROM pg_shadow WHERE usename=$1
+
+
+
 
