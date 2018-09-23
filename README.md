@@ -40,6 +40,9 @@ BINFILE="/opt/odyssey/odyssey"
 CONFFILE="/opt/odyssey/config"
 CMD="start-stop-daemon --verbose --pidfile $PIDFILE"
 
+- Copy to init.d
+cp init /etc/init.d/odyssey
+
 
 
 
