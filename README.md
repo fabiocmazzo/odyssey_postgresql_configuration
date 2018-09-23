@@ -43,6 +43,8 @@ CMD="start-stop-daemon --verbose --pidfile $PIDFILE"
 - Copy to init.d
 cp init /etc/init.d/odyssey
 git executable rights: chmod +x /etc/init.d/odyssey
+start odyssey: /etc/init.d/odyssey start
+
 
 
 
