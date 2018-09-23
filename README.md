@@ -27,6 +27,21 @@ Note: if you using md5 hash password, get password hash from database:
 
 SELECT usename, passwd FROM pg_shadow WHERE usename=$1
 
+# Edit init script file (https://raw.githubusercontent.com/yandex/odyssey/master/scripts/debian/init) to add in init.d 
+
+- Change variables ex:
+NAME="odyssey"
+USER="root"
+GROUP="root"
+LOGDIR="/opt/odyssey/logs/"
+PIDDIR="/opt/odyssey/"
+PIDFILE="/opt/odyssey/odyssey_pid"
+BINFILE="/opt/odyssey/odyssey"
+CONFFILE="/opt/odyssey/config"
+CMD="start-stop-daemon --verbose --pidfile $PIDFILE"
+
+
+
 
 
 
